@@ -1,0 +1,76 @@
+.contact {
+    text-align: center;
+    padding: 2rem;
+  }
+  .contact-container {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 15px;
+    width: 100%;
+}
+.contactinfo{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+    gap: 20px;
+    width: 60%;
+    /* border: 1px solid red; */
+
+}
+.contact-item {
+  display: flex;
+  align-items: center;
+  /* width: 35%; */
+  gap: 10px;
+  font-size: 18px;
+  font-family: "League Spartan", sans-serif;
+  font-size: 1.2rem;
+  /* border: 1px solid red; */
+}
+
+.contact-item i {
+  font-size: 1.5rem;
+  color: #657A97;
+}
+
+.contact-item a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.contact-item a:hover {
+  color: #657A97;
+}
+  @media (max-width: 768px) {
+    .contact {
+      padding: 1rem;
+    }
+    .contact-form {
+      padding: 15px;
+  }
+  }
+  
+  @media (max-width: 425px) {
+    .contact {
+      padding: 0.5rem;
+    }
+    .contact-form {
+      padding: 10px;
+  }
+  }
+  
+  @media (max-width: 375px) {
+    .contact {
+      padding: 0.5rem;
+    }
+  }
+  
+  @media (max-width: 320px) {
+    .contact {
+      padding: 0.5rem;
+    }
+  }
+  

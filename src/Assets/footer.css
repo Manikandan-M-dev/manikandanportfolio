@@ -1,0 +1,32 @@
+.footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #2B4F71;
+    font-family: "Libre Baskerville", serif;
+    color: white;
+  }
+  
+  @media (max-width: 768px) {
+    .footer {
+      padding: 0.5rem;
+    }
+  }
+  
+  @media (max-width: 425px) {
+    .footer {
+      padding: 0.5rem;
+    }
+  }
+  
+  @media (max-width: 375px) {
+    .footer {
+      padding: 0.5rem;
+    }
+  }
+  
+  @media (max-width: 320px) {
+    .footer {
+      padding: 0.5rem;
+    }
+  }
+  
