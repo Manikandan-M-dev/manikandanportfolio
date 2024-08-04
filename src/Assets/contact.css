@@ -1,74 +1,105 @@
 .contact {
     text-align: center;
     padding: 2rem;
+    margin:2.5rem 0rem;
+  }
+  .contact h2 span  {
+    /* background-color:#006465; */
+    background-color: #5B247A;
+    padding: 6px 16px;
+    border-radius: 25px;
+    color:white;
+    font-family: "Josefin Sans", sans-serif;
   }
   .contact-container {
     display: flex;
     justify-content: center;
     /* align-items: center; */
-    gap: 15px;
+    /* gap: 15px; */
     width: 100%;
+    height: 40vh;
 }
 .contactinfo{
     display: flex;
-    flex-direction: column;
-    justify-content:flex-start;
-    align-items: center;
-    gap: 20px;
-    width: 60%;
-    /* border: 1px solid red; */
-
+    flex-wrap: wrap;
+    /* justify-content: flex-start; */
+    align-items:flex-start;
+    justify-content: space-between;
+    /* gap: 20px; */
+    width: 70%;
+    /* padding: 20px 50px;; */
+    margin-top: 20px;
 }
 .contact-item {
   display: flex;
   align-items: center;
-  /* width: 35%; */
+  justify-content:center;
+  /* width:30%; */
+  height: 40px;
+  margin-top: 30px;
   gap: 10px;
   font-size: 18px;
   font-family: "League Spartan", sans-serif;
   font-size: 1.2rem;
+  padding: 8px 15px;
   /* border: 1px solid red; */
+  box-shadow: 0px 0px 10px  #657A97;
+  border-radius: 10px;
+  box-sizing: border-box;
+  /* background-color: #3BB2B8; */
+  /* background-color: #001F3F; */
+  /* color:#FF851B; */
 }
 
 .contact-item i {
   font-size: 1.5rem;
-  color: #657A97;
+  /* color: #657A97; */
+  color: black;
 }
 
 .contact-item a {
   text-decoration: none;
-  color: #333;
+  /* color: #333; */
+  color: black;
+  font-weight: 550;
+  /* color:#FF851B; */
   transition: color 0.3s ease;
 }
 
 .contact-item a:hover {
   color: #657A97;
 }
-  @media (max-width: 768px) {
+  @media screen and (max-width: 768px) {
     .contact {
-      padding: 1rem;
+      padding:0.5rem;
+      margin: 2.2rem 0rem;
     }
-    .contact-form {
-      padding: 15px;
-  }
+    .contactinfo{
+      width: 100%;
+    }
   }
   
-  @media (max-width: 425px) {
-    .contact {
-      padding: 0.5rem;
-    }
-    .contact-form {
-      padding: 10px;
-  }
-  }
-  
-  @media (max-width: 375px) {
+  @media screen and  (max-width: 425px) {
     .contact {
       padding: 0.5rem;
     }
+  .contactinfo{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+  }
+  /* .contact-item{
+    width: 80%;
+  } */
   }
   
-  @media (max-width: 320px) {
+  @media screen and  (max-width: 375px) {
+    .contact {
+      padding: 0.5rem;
+    }
+  }
+  
+  @media screen and  (max-width: 320px) {
     .contact {
       padding: 0.5rem;
     }

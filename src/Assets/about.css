@@ -1,11 +1,14 @@
 .about {
   text-align: center;
   padding: 2rem;
+  /* height: 80vh; */
 }
 
 .aboutcontent {
   width: 80%;
-  border: 1px solid #657A97;
+  
+  /* border: 1px solid #657A97; */
+  box-shadow: 0px 0px 10px  #657A97;
   border-radius: 8px;
   /* color: #465048; */
   /* color: #226160; */
@@ -29,11 +32,12 @@
 }
 
 .about h2 span {
-  font-family: "Libre Baskerville", serif;
+  font-family: "Josefin Sans", sans-serif;
   font-weight: 400;
   font-size:1.6rem;
-  background-color:#006465;
-  padding: 4px 16px;
+  /* background-color:#006465; */
+  background-color: #5B247A;
+  padding: 6px 16px;
   border-radius: 25px;
   color:white;
 }
@@ -58,7 +62,10 @@
   
   /* border: 1px solid rgb(23, 1, 83); */
   border-radius: 10px;
-  background-color: #657A97;
+  /* background-color: #657A97; */
+  /* background-image: linear-gradient(to bottom right,#42E695,#3BB2B3); */
+  background-image: linear-gradient(to bottom right,#5B247A,#1BCEDF);
+  
 }
 
 .frontenditems {
@@ -78,11 +85,12 @@
   font-family: "Libre Baskerville", serif;
   font-size: 1.2rem;
   color: #E9EDF8;
+  /* color: #213502; */
   font-weight: 550;
 }
 
 .logo-item {
-  /* width: 30%; */
+  width:30%;
   font-family: "League Spartan", sans-serif;
   font-weight: 550;
   padding: 0px 30px;
@@ -96,7 +104,7 @@
   background-color: white;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .about {
     padding: 1rem;
   }
@@ -105,22 +113,28 @@
   }
 }
 
-@media (max-width: 425px) {
+@media screen and  (max-width: 425px) {
   .about {
     padding: 0.5rem;
   }
   .frontend{
     width:80%;
   }
+  .logo-item{
+    width: 40%;
+  }
+  .aboutcontent p:first-child {
+    font-size: 1rem;
+  }
 }
 
-@media (max-width: 375px) {
+@media screen and  (max-width: 375px) {
   .about {
     padding: 0.5rem;
   }
 }
 
-@media (max-width: 320px) {
+@media screen and  (max-width: 320px) {
   .about {
     padding: 0.5rem;
   }
