@@ -7,6 +7,7 @@
 
 .home {
   padding-top: 15px;
+  /* height: 100vh; */
 }
 
 .Homemain {
@@ -22,6 +23,8 @@
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.18);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  padding:50px 0px;
+  /* height: 100vh; */
 }
 
 .homedescription {
@@ -47,7 +50,7 @@
 
 .myimg {
   width: 40%;
-  height: 80vh;
+  /* height: 80vh; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -81,7 +84,7 @@
 @media screen and (max-width: 768px) {
   .myimg {
     width: 45%;
-    height: 70vh;
+    /* height: 70vh; */
   }
 
   .home {
@@ -90,7 +93,7 @@
 
   .homedescription {
     width: 45%;
-    height: 70vh;
+    /* height: 70vh; */
   }
 
   .homedescription p {
@@ -100,27 +103,35 @@
     font-size: 1.2rem;
   }
 }
-
-@media screen and (max-width:425px) {
+@media screen and (max-width:500px){
   .homedescription {
     width: 100%;
     height:auto;
-  }
-  .home{
-    height: 100vh;
   }
   .myimg {
     width: 100%;
     height:auto;
   }
-
+}
+@media screen and (max-width:425px) {
+  .homedescription {
+    width: 100%;
+    height:auto;
+  }
+  .myimg {
+    width: 100%;
+    height:auto;
+  }
+  .Homemain{
+    padding: 30px 0;
+  }
   .homedescription h1 {
     font-size: 1.4rem;
     text-align: center;
   }
 
   .homedescription p {
-    font-size:12px;
+    font-size:14px;
   }
 
   .myphoto {
