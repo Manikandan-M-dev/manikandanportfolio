@@ -3,7 +3,6 @@ import { Link } from 'react-scroll';
 import '../Assets/header.css';
 const Header = () => {  
   const [menuOpen, setMenuOpen] = useState(false);
-
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
@@ -20,7 +19,7 @@ const Header = () => {
         <Link to="about" smooth={true} duration={500} offset={-40} className="nav-link"tabIndex={0}
         onClick={closeMenu}activeClass="active"spy={true}>About</Link>
         <Link  to="projects"  smooth={true} duration={500} offset={-50} className="nav-link"tabIndex={0}onClick={closeMenu}activeClass="active"spy={true}>Projects</Link>
-        <Link to="contact" smooth={true} duration={500} offset={-80} className="nav-link" tabIndex={0}onClick={closeMenu}activeClass="active"spy={true}>Contact</Link>
+        <Link to="contact" smooth={true} duration={500} offset={-100} className="nav-link" tabIndex={0}onClick={closeMenu}activeClass="active"spy={true}>Contact</Link>
       </nav>
     </header>
   );
