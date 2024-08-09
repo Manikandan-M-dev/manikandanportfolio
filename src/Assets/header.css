@@ -3,18 +3,21 @@
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    /* background-color: #8b0375; */
-    /* background-color:#2B4F71; */
-    /* background-color:#C53364; */
-    /* background-color:#622774; */
-    background-color: #5B247A;
-    /* background-image: linear-gradient(to bottom right,#184E68,#57CA85); */
+    /* background-color: rgb(31,34,53); */
+    /* background-color: rgb(171,38,186); */
     width: 100%;
     color: #E9EDF8;
+    /* color: black; */
     position: fixed;
     top: 0;
     z-index: 1;
-    height:30px;
+    height:40px;
+    background: linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    /* border-radius: 20px; */
+    border: 1px solid rgba(255,255,255,0.18);
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
   }
   .devlogo{
     font-size: 25px;
@@ -27,7 +30,7 @@
   }
   .header-title span{
     margin: 0;
-    font-family: "Libre Baskerville", serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-size: 28px;
   }
@@ -35,19 +38,33 @@
     display: flex;
     /* border: 1px solid green; */
     margin-right: 30px;
-    cursor: pointer;
+    /* cursor: pointer; */
+    height: 40px;
   }
-
-  .hai{
-    color:red;
+  /* .active-scroll-spy {
+    background-color: yellowgreen;
+    border-radius: 15px;
+  } */
+  .active{
+    /* background-color: yellowgreen; */
+    /* text-decoration: underline; */
+    /* color:yellow; */
+    /* color: chartreuse; */
+    /* color: #69DACA; */
+  border-bottom: 2px solid #ff7300;
+    /* font-weight: bold; */
+    /* border-radius:10px ; */
+    /* font-weight: bold; */
+    
   }
-  
   .nav-link {
-    color: white;
-    text-decoration: none;
+    /* color: white; */
     margin: 0 1rem;
-    font-family: "Josefin Sans", sans-serif;
-    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    font-size:1.2rem;
+    padding: 3px 10px;
+    /* font-weight: bold; */
+    /* padding: 0px 10px; */
   }
   /* .nav-link:focus{
     color: chartreuse;
@@ -75,15 +92,17 @@
       flex-direction: column;
       align-items: center;
       display: none;
+      height: auto;
     }
   
     .nav-open {
       display: flex;
       margin: 0;
+      width: 100vh;
     }
-  
     .nav-link {
       margin: 0.5rem 0;
+      /* border-bottom: 1px solid white; */
     }
   
     .menu-toggle {

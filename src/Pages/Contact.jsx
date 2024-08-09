@@ -1,10 +1,11 @@
-
 import '../Assets/contact.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import contactimg from "../Images/contactimage.png";
+
 const Contact = () => {
   return (
     <>
-      <section className="contact">
+      <section className="contact" id="contact">
         <h2><span>Contact Me</span></h2>
         <div className="contact-container">
           <div className="contactinfo" data-aos="zoom-in-up" data-aos-duration="1500">
@@ -20,6 +21,7 @@ const Contact = () => {
               <i className="fab fa-github"></i>
               <a href="https://github.com/Manikandan-M-dev" target="_blank" rel="noopener noreferrer">GitHub Profile</a>
             </div>
+            <img src={contactimg} alt="contactimage"/>
           </div>
         </div>
       </section>

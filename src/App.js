@@ -1,5 +1,5 @@
 import React from 'react';
-import 'bootstrap-icons/font/bootstrap-icons.css'; 
+import 'bootstrap-icons/font/bootstrap-icons.css';
 import Header from './Pages/Header';
 import Home from './Pages/Home';
 import About from './Pages/About';
@@ -12,13 +12,13 @@ const App = () => (
 <div className="app">
     <Header />
     <main className="main-content">
-      <Home/>
-      <About />
-      <Projects />
-      <Contact />
+    <Home id="home"/>
+      <About id="about"  />
+      <Projects id="projects" />
+      <Contact id="contact"/>
     </main>
     <Footer />
-  </div>
+  </div >
 );
 
 export default App;

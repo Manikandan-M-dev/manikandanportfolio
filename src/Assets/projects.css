@@ -4,12 +4,12 @@
     margin-top: 10px;
   }
   .projects h2 span{
-    font-family: "Josefin Sans", sans-serif;
-    /* background-color:#006465; */
-    background-color: #5B247A;
+    font-family: "Poppins", sans-serif;
+    background-color: #c6cecf;
     padding: 6px 16px;
     border-radius: 25px;
-    color:white;
+    color:#FF7300;
+    font-size: 1.3rem;
   }
   .project-list {
     width: 100%;
@@ -22,19 +22,21 @@
   }
   .projectdescription{
     text-align:center;
-    /* font-family: "Libre Baskerville", serif; */
     font-family: "Montserrat", sans-serif;
   }
   .project-item {
     width:45%;
-    /* margin: 1rem; */
     padding: 1rem;
     position: relative;
     display: flex;
     flex-direction: column;
-    background-color: #CCE2E4;
     border-top-right-radius: 40px;
     border-bottom-left-radius: 50px;
+    background: linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.18);
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
   }
   .overlay {
     position: absolute;
@@ -42,7 +44,6 @@
     left: 0;
     width: 100%;
     height: 100%;
-    /* background: rgba(0, 0, 0, 0.7); */
     color: white;
     background-color:rgba(83, 70, 100, 0.829);
     opacity: 0;
@@ -69,7 +70,6 @@
     gap: 8px;
     align-self: center;
     background-color:#006465;
-    /* border: 1px solid #006465; */
     padding: 6px 18px;
     border-radius: 20px;
     border: 1px solid #006465;
@@ -79,10 +79,14 @@
     border: 1px solid #006465;
     color:#006465 ;
   }
+  .project-item p{
+    color: rgb(247, 235, 235);
+  }
   .projctTitle{ 
     font-size: 1.5rem;
     font-weight: 550;
-    font-family: "Josefin Sans", sans-serif;
+    font-family: "Montserrat", sans-serif;
+    color: rgb(247, 235, 235);
   }
   .githublogobtn{
     font-size: 1.5rem;
@@ -100,6 +104,9 @@
       width: 100%;
       margin: 0.5rem 0;
     }
+    .projects h2 span{
+      font-size: 17px;
+    }
   }
   
   @media screen and  (max-width: 425px) {
@@ -108,6 +115,9 @@
     }
     .project-item{
       margin: 0;
+    }
+    .projctTitle{
+      font-size: 15px;
     }
   }
   

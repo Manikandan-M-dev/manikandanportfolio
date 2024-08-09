@@ -10,11 +10,9 @@ import gitlogo from "../Images/gitlogo.png";
 import excellogo from "../Images/excellogop.png";
 import wordlogo from "../Images/wordlogop.png";
 import coreldrawlogo from "../Images/coreldraw.png";
-// import { Shake } from 'reshake';
-// import Header from "../Pages/Header";
+
 
 const About = () => {
-  // const [hovered, setHovered] = useState(null);
 
   const frontendItems = [
     { logo: htmllogo, name: 'HTML' },
@@ -31,11 +29,12 @@ const About = () => {
     { logo: coreldrawlogo, name: 'CORELDRAW' }
   ]
   return (
-    <section className="about">
+    <section className="about" id="about">
       <h2><span>About Me</span></h2>
       <div className='aboutmain'>
         <div className='aboutcontent'>
           <p>Hello! I’m <b>Manikandan</b>, a passionate front-end developer with a strong foundation in HTML, CSS, JavaScript and React.js. As a recent graduate with a degree in M.Sc Mathematics, I am excited to embark on my professional journey in web development.</p>
+          <button>Download CV</button>
         </div>
       </div>
       <p className='skillhead'>Here are some of my skills on which I have learnt</p>
@@ -58,7 +57,7 @@ const About = () => {
           <p>Others</p>
           <div className="frontenditems">
             {otherItems.map((otheritem, index) => (
-              <div className="logo-item">
+              <div className="logo-item" key={index}>
                 <img src={otheritem.logo} alt={`${otheritem.name}logo`} className='logoimg' /><span>{otheritem.name}</span>
               </div>
             ))}

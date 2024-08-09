@@ -8,8 +8,8 @@ import veganpage from "../Images/veganpage.png";
 
 const Projects = () => {
   return(
-  <section className="projects">
-    <h2><span>Projects</span></h2>
+  <section className="projects" id="projects">
+    <h2><span>Practiced Projects</span></h2>
     <div className="project-list">
       <div className="project-item" data-aos="flip-left" data-aos-duration="2000">
         <div>

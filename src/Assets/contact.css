@@ -4,71 +4,60 @@
     margin:2.5rem 0rem;
   }
   .contact h2 span  {
-    /* background-color:#006465; */
-    background-color: #5B247A;
+    background-color: #c6cecf;
     padding: 6px 16px;
     border-radius: 25px;
-    color:white;
-    font-family: "Josefin Sans", sans-serif;
+    color:#FF7300;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.3rem;
   }
   .contact-container {
     display: flex;
     justify-content: center;
-    /* align-items: center; */
-    /* gap: 15px; */
     width: 100%;
-    height: 40vh;
 }
 .contactinfo{
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: flex-start; */
-    align-items:flex-start;
-    justify-content: space-between;
-    /* gap: 20px; */
+    align-items:center;
+    justify-content:space-around;
     width: 70%;
-    /* padding: 20px 50px;; */
     margin-top: 20px;
+}
+.contactinfo img{
+  width: 40%;
 }
 .contact-item {
   display: flex;
   align-items: center;
   justify-content:center;
-  /* width:30%; */
   height: 40px;
   margin-top: 30px;
   gap: 10px;
   font-size: 18px;
-  font-family: "League Spartan", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.2rem;
   padding: 8px 15px;
-  /* border: 1px solid red; */
-  box-shadow: 0px 0px 10px  #657A97;
   border-radius: 10px;
   box-sizing: border-box;
-  /* background-color: #3BB2B8; */
-  /* background-color: #001F3F; */
-  /* color:#FF851B; */
+  background: linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.18);
+  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
 }
 
 .contact-item i {
   font-size: 1.5rem;
-  /* color: #657A97; */
-  color: black;
+  color: white;
 }
 
 .contact-item a {
   text-decoration: none;
-  /* color: #333; */
-  color: black;
+  color: white;
   font-weight: 550;
-  /* color:#FF851B; */
-  transition: color 0.3s ease;
 }
 
-.contact-item a:hover {
-  color: #657A97;
-}
   @media screen and (max-width: 768px) {
     .contact {
       padding:0.5rem;
@@ -76,6 +65,15 @@
     }
     .contactinfo{
       width: 100%;
+    }
+    .contact h2 span{
+      font-size: 17px;
+    }
+    .contact-item i{
+      font-size: 1rem;
+    }
+    .contact-item a{
+      font-size: 1.1rem;
     }
   }
   
@@ -88,9 +86,15 @@
     display: flex;
     justify-content: center;
   }
-  /* .contact-item{
-    width: 80%;
-  } */
+  .contactinfo img{
+    width: 60%;
+  }
+  .contact-item i{
+    font-size: 14px;
+  }
+  .contact-item a{
+    font-size:14px;
+  }
   }
   
   @media screen and  (max-width: 375px) {

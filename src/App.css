@@ -2,24 +2,21 @@ body, html, .app {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color:#E9EDF8;
+  background: url(../src/Images/backbod.jpg);
+  background-attachment:fixed ;
+  background-repeat: no-repeat;
+  background-size: cover;
+}       
+body::-webkit-scrollbar {
+  display: none;
 }
-
-.main-content {
+.app{
+  cursor: url(../src/Images/cursor2.png),auto;
+}
+ .main-content {
   padding: 2rem;
   margin-top: 40px;
-}
-/* custom Scrollbar */
-::-webkit-scrollbar{
-  width: 7px;
-}
-::-webkit-scrollbar-track{
-  background-color:#d1e5ff;
-}
-::-webkit-scrollbar-thumb{
-  background:#657A97;
-}
-
+}                                                                 
 @media (max-width: 768px) {
   .main-content {
     padding: 1rem;

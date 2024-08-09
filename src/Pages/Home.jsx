@@ -1,15 +1,13 @@
 import "../Assets/home.css";
-import myphoto from "../Images/Photographport.jpg";
+import myphoto from "../Images/Photographport1.png";
 import { Typewriter } from 'react-simple-typewriter';
 const Home = () => {
     return (
         <>
-            <section className="home">
+            <section className="home" id="home">
                 <div className="Homemain">
-                    <div className="myimg">
-                        {/* <div className="myphoto"> */}
-                        <img src={myphoto} alt="" className="myphoto" />
-                        {/* </div> */}
+                    <div className="myimg" data-aos="zoom-in">
+                            <img src={myphoto} alt="photograph" className="myphoto" />
                     </div>
                     <div className="homedescription">
                         <h1>

@@ -1,85 +1,127 @@
-.homedescription p{
-    font-family: "Josefin Sans", sans-serif;
-    font-size: 1.5rem;
-    /* color: #657A97; */
-    color: white;
+.homedescription p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  color: white;
 
 }
-.Homemain{
-    width: 100%;
-    /* height: 80vh; */
-    /* background-color: rgb(169, 169, 204); */
-    /* border: 2px solid  rgb(169, 169, 204); */
-    box-shadow: 0px 0px 20px  rgb(169, 169, 204) ;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:space-evenly;
-    border-top-right-radius: 60px;
-    border-bottom-left-radius: 60px;
-    background-color: #001F3F;
-    color:#FF851B;
+
+.home {
+  padding-top: 15px;
 }
-.homedescription{
-    width: 40%;
-    height: 80vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /* align-items: center; */
-    padding: 0 1.2rem;
+
+.Homemain {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  color: chartreuse;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
-.myphoto{
-  border: 4px solid #FF851B;
-  width: 46%;
+
+.homedescription {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 1.2rem;
+  box-sizing: border-box;
+}
+
+.myphoto {
+  width: 60%;
   height: auto;
-  border-radius:30%;
+  animation: mypic 8s ease-in-out infinite;
+  padding-top: 20px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
-.myimg{
-    width: 40%;
-    height: 80vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0.8rem 0;
-    /* background-color: aqua; */
-    /* border: 1px solid black; */
-}
-.homedescription h1{
-    font-size: 1.9rem;
-    font-family: "Montserrat", sans-serif;
-}
-  
 
+.myimg {
+  width: 40%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8rem 0;
+}
 
-  @media screen and(max-width: 768px) {
-    .myimg{
-      width:45%;
-      height: 70vh;
+.homedescription h1 {
+  font-size: 1.9rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+@keyframes mypic {
+  0% {
+    border-bottom-left-radius: 30%;
+    border-top-right-radius: 40%;
   }
-  .homedescription{
-    width:45%;
+
+  50% {
+    border-top-left-radius: 40%;
+    border-bottom-right-radius: 40%;
+    border-bottom-left-radius: 0%;
+    border-top-right-radius: 0%;
+  }
+
+  100% {
+    border-bottom-left-radius: 30%;
+    border-top-right-radius: 40%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .myimg {
+    width: 45%;
     height: 70vh;
-}
-}
-  
-  @media screen and (max-width:425px) {
-    .homedescription,.myimg{
-        width: 100%;
-    }
-    .homedescription h1{
-      font-size: 1.4rem;
-    }
-    .homedescription p{
-      font-size: 1.3rem;
-    }
-    .myphoto{
-      width: 50%;
-    }
   }
-  @media (max-width:375px) {
 
+  .home {
+    padding-top: 0;
   }
-  @media (max-width:320px) {
-  
-      
+
+  .homedescription {
+    width: 45%;
+    height: 70vh;
   }
+
+  .homedescription p {
+    font-size: 15px;
+  }
+  .homedescription h1{
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width:425px) {
+  .homedescription {
+    width: 100%;
+    height:auto;
+  }
+
+  .myimg {
+    width: 100%;
+    height:auto;
+  }
+
+  .homedescription h1 {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  .homedescription p {
+    font-size:12px;
+  }
+
+  .myphoto {
+    width: 50%;
+  }
+}
