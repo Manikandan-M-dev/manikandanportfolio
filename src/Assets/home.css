@@ -106,7 +106,9 @@
     width: 100%;
     height:auto;
   }
-
+  .home{
+    height: 100vh;
+  }
   .myimg {
     width: 100%;
     height:auto;

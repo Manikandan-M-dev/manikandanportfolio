@@ -80,6 +80,7 @@
   @media screen and  (max-width: 425px) {
     .contact {
       padding: 0.5rem;
+      height: 100vh;
     }
   .contactinfo{
     width: 80%;
@@ -87,7 +88,7 @@
     justify-content: center;
   }
   .contactinfo img{
-    width: 60%;
+    width: 80%;
   }
   .contact-item i{
     font-size: 14px;

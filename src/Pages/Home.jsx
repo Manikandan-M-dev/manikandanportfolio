@@ -12,7 +12,7 @@ const Home = () => {
                     <div className="homedescription">
                         <h1>
                             <Typewriter
-                                words={['Manikandan']}
+                                words={['Manikandan M']}
                                 loop={false}
                                 cursor
                                 cursorStyle='|'
