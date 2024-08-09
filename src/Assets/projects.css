@@ -111,7 +111,7 @@
   
   @media screen and  (max-width: 425px) {
     .projects {
-      padding: 0.2rem;
+      padding: 0.5rem;
     }
     .project-item{
       margin: 0;

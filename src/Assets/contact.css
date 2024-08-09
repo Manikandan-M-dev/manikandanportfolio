@@ -1,10 +1,7 @@
 .contact {
     text-align: center;
     padding: 2rem;
-    margin:2.5rem 0rem;
-    /* height: 100vh;
-    width: 100vw; */
-    min-height: 90vh;
+    /* margin: 2.2rem 0rem; */
   }
   .contact h2 span  {
     background-color: #c6cecf;
@@ -64,7 +61,7 @@
   @media screen and (max-width: 768px) {
     .contact {
       padding:0.5rem;
-      margin: 2.2rem 0rem;
+      /* margin: 2.2rem 0rem; */
     }
     .contactinfo{
       width: 100%;
@@ -83,7 +80,9 @@
   @media screen and  (max-width: 425px) {
     .contact {
       padding: 0.5rem;
-      /* height: 75vh; */
+      /* height: 85vh; */
+      /* margin: 1rem 0rem; */
+      min-height: 100vh;
     }
   .contactinfo{
     width: 80%;

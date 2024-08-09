@@ -23,7 +23,7 @@
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.18);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-  padding:50px 0px;
+  padding:45px 0px;
   /* height: 100vh; */
 }
 
@@ -121,6 +121,9 @@
   .myimg {
     width: 100%;
     height:auto;
+  }
+  .myphoto{
+    width: 70%;
   }
   .Homemain{
     padding: 30px 0;
