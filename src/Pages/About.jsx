@@ -10,7 +10,7 @@ import gitlogo from "../Images/gitlogo.png";
 import excellogo from "../Images/excellogop.png";
 import wordlogo from "../Images/wordlogop.png";
 import coreldrawlogo from "../Images/coreldraw.png";
-
+import pdffile from "../Images/Manikandan M Resume FrontEnd.pdf";
 
 const About = () => {
 
@@ -34,7 +34,7 @@ const About = () => {
       <div className='aboutmain'>
         <div className='aboutcontent'>
           <p>Hello! I’m <b>Manikandan</b>, a passionate front-end developer with a strong foundation in HTML, CSS, JavaScript and React.js. As a recent graduate with a degree in M.Sc Mathematics, I am excited to embark on my professional journey in web development.</p>
-          <button>Download CV</button>
+          <a href={pdffile} download="Manikandan M Resume FrontEnd.pdf">Download CV</a>
         </div>
       </div>
       <p className='skillhead'>Here are some of my skills on which I have learnt</p>
