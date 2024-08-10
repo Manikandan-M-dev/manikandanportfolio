@@ -49,10 +49,10 @@
 .about h2 span {
   font-family: "Poppins", sans-serif;
   font-size:1.3rem;
-  background-color: #c6cecf;
+  background-color: rgb(29,200,219);
+  color: rgb(31,29,68);
   padding: 6px 25px;
   border-radius: 25px;
-  color:#FF7300;
 }
 
 .aboutcontent p:first-child {
