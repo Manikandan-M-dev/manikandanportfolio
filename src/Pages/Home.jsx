@@ -4,7 +4,7 @@ import { Typewriter } from 'react-simple-typewriter';
 const Home = () => {
     return (
         <>
-            <section className="home" id="home">
+            <section className="home" id="home"> 
                 <div className="Homemain">
                     <div className="myimg" data-aos="zoom-in">
                             <img src={myphoto} alt="photograph" className="myphoto" />

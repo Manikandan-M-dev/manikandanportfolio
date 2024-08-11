@@ -64,20 +64,24 @@
   }
   .project-item a {
     text-decoration: none;
-    color:#E9EDF8;
+    /* color:#E9EDF8; */
     display: flex;  
     align-items: center;
     gap: 8px;
     align-self: center;
-    background-color:#006465;
+    /* background-color:#006465; */
+    background-color:#1DC8DB ;
+    color:rgb(31,29,68);
     padding: 6px 18px;
     border-radius: 20px;
-    border: 1px solid #006465;
+    border: 1px solid #1DC8DB;
+    font-weight: bold;
   }
   .project-item a:hover{
     background-color: white;
-    border: 1px solid #006465;
-    color:#006465 ;
+    border: 1px solid #1DC8DB;
+    color:rgb(31,29,68) ;
+    font-weight: bold;
   }
   .project-item p{
     color: rgb(247, 235, 235);
@@ -90,6 +94,9 @@
   }
   .githublogobtn{
     font-size: 1.5rem;
+  }
+  .sitelogobtn{
+    font-size: 1.4rem;
   }
   .project-item:hover {
     transform: scale(1.05);
@@ -118,6 +125,12 @@
     }
     .projctTitle{
       font-size: 15px;
+    }
+    .githublogobtn{
+      font-size: 1rem;
+    }
+    .sitelogobtn{
+      font-size: 1rem;
     }
   }
   
